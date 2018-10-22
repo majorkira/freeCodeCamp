@@ -2,24 +2,44 @@
 title: CSS Images
 ---
 ## CSS Images
-This helps in adding an image to a website.
+CSS can be used to customize images by setting a number of properties. 
 
 #### Code Sample
+A basic HTML tag is written as:
 
 ```<img src="picture.jpg" alt="Picture" width="100" height="100">```
 
-* **src:** It consists the value of the path to the required image</li>
-* **alt:** If the image is not displayed then an alternate text can be displayed using alt attribute.</li>
-* **width:** This specifies a width for the image(can be percent or px or auto)</li>
-* **height:** This specifies a height for the image(can be percent or px or auto)</li>
+* **src:** The value of the path to the image</li>
+* **alt:** Alternate text that is used if the image is not displayed.</li>
+* **width:** The width of the image (can be percent or px or auto)</li>
+* **height:** The height of the image(can be percent or px or auto)</li>
 
-#### CSS Defaults
+### CSS Defaults
 The `img` element will be rendered by default in most browsers to be displayed as an inline-block display type unless specified otherwise.
 
 ```
 img {
      display: inline-block;
      }
+```
+### Responsive Images
+CSS can be used to make images responsive by automatically adjusting their size according to screen size. The `max-width` property can be used to specify the maximum width of the image, from which it can be scaled down when necessary. 
+
+```
+img {
+     max-width: 100%,
+     height: auto
+     }
+```
+CSS can also be used to center an image in its container while maintaining its relative size within the container. Using this method requires the image to be set as a `block` element:
+
+```
+img {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 25%;
+     };
 ```
 
 #### More Information:
